@@ -30,9 +30,19 @@ def display_matching_characters(guess=(), target_word=()):
     """Get characters in guess that correspond to characters in the target_word"""
     i = 0
     for char in guess:
-        print(char, target_word[i])
+        if char == target_word[i]:
+            # Print the character in green
+            print('\033[92m' + char + '\033[0m', end='')
+        else:
+            # Print the character as it is (not green)
+            print(char, end='')
         i += 1
+    print()  # Add a newline after printing all characters
 
+# Example usage
+guess = "hello"
+target_word = "apply"
+display_matching_characters(guess, target_word)
 
 # TODO: repeat for MAX_TRIES valid attempts
 # (start loop)
@@ -48,12 +58,14 @@ while True:
                 print(GREEN + "Your guess is correct!" + RESET)
             else:
                 print(RED + "Your guess is wrong!" + RESET)
+                # TODO: provide clues for each character in the guess using your scoring algorithm
                 print(display_matching_characters())
+                print(f"You have {ATTEMPTS_TRIED} out of 6 attempts")
         else:
             print("Invalid word, please enter a 5 letter word")
 
-# TODO: provide clues for each character in the guess using your scoring algorithm
-        
+
+
 
 # (end loop)
 print("Game Over")
