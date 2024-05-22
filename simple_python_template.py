@@ -21,28 +21,29 @@ RESET = "\033[0m"
 
 
 print("You have 6 attempts to guess the correct 5-letter word")
+print("Yellow marks correct letters, whereas green marks correct letters in the correct placement")
 
 # TODO: select target word at random from TARGET_WORDS
 target_word = random.choice(TARGET_WORDS)
 print(target_word)
 
 def display_matching_characters(guess=(), target_word=()):
-    """Get characters in guess that correspond to characters in the target_word"""
-    i = 0
-    for char in guess:
+    result = ''
+    # Need to return empty otherwise None appears
+    for i in range(len(guess)):
+        char = guess[i]
         if char == target_word[i]:
-            # Print the character in green
-            print('\033[92m' + char + '\033[0m', end='')
+            # Print green if letter placement correct
+            result += GREEN + char + RESET
+        elif char in target_word:
+            # Print yellow if letter correct only
+            result += YELLOW + char + RESET
         else:
-            # Print the character as it is (not green)
-            print(char, end='')
-        i += 1
-    print()  # Add a newline after printing all characters
+            result += char
+    return result
 
-# Example usage
-guess = "hello"
-target_word = "apply"
-display_matching_characters(guess, target_word)
+
+
 
 # TODO: repeat for MAX_TRIES valid attempts
 # (start loop)
@@ -59,8 +60,8 @@ while True:
             else:
                 print(RED + "Your guess is wrong!" + RESET)
                 # TODO: provide clues for each character in the guess using your scoring algorithm
-                print(display_matching_characters())
-                print(f"You have {ATTEMPTS_TRIED} out of 6 attempts")
+                print(display_matching_characters(guess, target_word))
+                print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
         else:
             print("Invalid word, please enter a 5 letter word")
 
