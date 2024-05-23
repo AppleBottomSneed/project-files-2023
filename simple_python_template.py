@@ -2,7 +2,6 @@
 Guess-My-Word Project Application"""
 # See the assignment worksheet and journal for further details.
 # Begin by completing the TODO items below in the order you specified in the journal
-
 import random
 
 read_target_words_file = open('./word-bank/target_words.txt', 'r')
@@ -47,29 +46,29 @@ def display_matching_characters(guess=(), target_word=()):
 
 # TODO: repeat for MAX_TRIES valid attempts
 # (start loop)
-while True:
-    if ATTEMPTS_TRIED < MAX_TRIES:
+class WordleMechanics:
+    while True:
+        if ATTEMPTS_TRIED < MAX_TRIES:
 
 
-# TODO: ensure guess in VALID_WORDS
-        guess = input("What is your guess?: ").strip().lower()
-        if guess in VALID_WORDS:
-            ATTEMPTS_TRIED += 1
-            if guess == target_word:
-                print(GREEN + "Your guess is correct!" + RESET)
+    # TODO: ensure guess in VALID_WORDS
+            guess = input("What is your guess?: ").strip().lower()
+            if guess in VALID_WORDS:
+                ATTEMPTS_TRIED += 1
+                if guess == target_word:
+                    print(GREEN + "Your guess is correct!" + RESET)
+                else:
+                    print(RED + "Your guess is wrong!" + RESET)
+                    # TODO: provide clues for each character in the guess using your scoring algorithm
+                    print(display_matching_characters(guess, target_word))
+                    print(f"You have used {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
             else:
-                print(RED + "Your guess is wrong!" + RESET)
-                # TODO: provide clues for each character in the guess using your scoring algorithm
-                print(display_matching_characters(guess, target_word))
-                print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
+                print(RED + "Invalid word, please enter a 5 letter word" + RESET)
+
+    # (end loop)
         else:
-            print("Invalid word, please enter a 5 letter word")
-
-
-
-
-# (end loop)
-print("Game Over")
+            print("Game Over")
+            break
 
 
 # NOTES:
