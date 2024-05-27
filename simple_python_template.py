@@ -4,6 +4,7 @@ Guess-My-Word Project Application"""
 # Begin by completing the TODO items below in the order you specified in the journal
 import random
 
+
 read_target_words_file = open('./word-bank/target_words.txt', 'r')
 read_all_words_file = open('./word-bank/all_words.txt', 'r')
 
@@ -13,6 +14,7 @@ VALID_WORDS = read_all_words_file.read().split()
 MAX_TRIES = 6
 ATTEMPTS_TRIED = 0
 
+#Colour shortcuts
 RED = "\033[91m"
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
@@ -24,32 +26,31 @@ print("Yellow marks correct letters, whereas green marks correct letters in the 
 
 # TODO: select target word at random from TARGET_WORDS
 target_word = random.choice(TARGET_WORDS)
-print(target_word)
+
+#Uncomment to pin target word
+#print(target_word)
 
 def display_matching_characters(guess=(), target_word=()):
-    result = ''
-    # Need to return empty otherwise None appears
-    for i in range(len(guess)):
-        char = guess[i]
+    i = 0
+    result = ""
+    for char in guess:
         if char == target_word[i]:
-            # Print green if letter placement correct
-            result += GREEN + char + RESET
+            # Print the character in green
+            print(GREEN + char + RESET, end='')
         elif char in target_word:
-            # Print yellow if letter correct only
-            result += YELLOW + char + RESET
+            # Print the character in yellow if it's part of the correct word but not in the correct position
+            print(YELLOW + char + RESET, end='')
         else:
-            result += char
+            # Print the character as it is (not green or yellow)
+            print(char, end='')
+        i += 1
     return result
-
-
-
 
 # TODO: repeat for MAX_TRIES valid attempts
 # (start loop)
 class WordleMechanics:
     while True:
         if ATTEMPTS_TRIED < MAX_TRIES:
-
 
     # TODO: ensure guess in VALID_WORDS
             guess = input("What is your guess?: ").strip().lower()

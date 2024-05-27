@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ICTPRG302 AT2 PRJ 2023.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ICTPRG302 AT2 PRJ 2023.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_python_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_python_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_wordle.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_wordle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jon55/Desktop/TAFE/Intro to Programming/project-files-2023&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.simple_python_template">
     <configuration name="simple_python_template" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project-files-2023" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,9 +55,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_wordle.TestTargetByGuess.test_guess" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project-files-2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_wordle.TestTargetByGuess.test_guess&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_wordle.TestTargetByGuess.test_incorrect_guess" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project-files-2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_wordle.TestTargetByGuess.test_incorrect_guess&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_wordle.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project-files-2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_wordle.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.simple_python_template" />
+        <item itemvalue="Python tests.Python tests for test_wordle.TestTargetByGuess.test_incorrect_guess" />
+        <item itemvalue="Python tests.Python tests in test_wordle.py" />
+        <item itemvalue="Python tests.Python tests for test_wordle.TestTargetByGuess.test_guess" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +122,8 @@
       <workItem from="1715913730387" duration="12096000" />
       <workItem from="1716179558331" duration="596000" />
       <workItem from="1716258139587" duration="9118000" />
-      <workItem from="1716348942523" duration="3509000" />
+      <workItem from="1716348942523" duration="4130000" />
+      <workItem from="1716780944862" duration="9148000" />
     </task>
     <servers />
   </component>
@@ -81,6 +131,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project_files_2023$simple_python_template.coverage" NAME="simple_python_template Coverage Results" MODIFIED="1716355004214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_files_2023$.coverage" NAME=" Coverage Results" MODIFIED="1716787601875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_files_2023$simple_python_template.coverage" NAME="simple_python_template Coverage Results" MODIFIED="1716790142781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
