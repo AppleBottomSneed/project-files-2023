@@ -33,6 +33,7 @@ target_word = random.choice(TARGET_WORDS)
 def display_matching_characters(guess=(), target_word=()):
     i = 0
     result = ""
+    #Result has no value, required to print out empty string for guess
     for char in guess:
         if char == target_word[i]:
             # Print the character in green
