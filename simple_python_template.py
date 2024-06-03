@@ -15,10 +15,14 @@ MAX_TRIES = 6
 ATTEMPTS_TRIED = 0
 
 #Colour shortcuts
-RED = "\033[91m"
-GREEN = "\033[92m"
-YELLOW = "\033[93m"
-RESET = "\033[0m"
+#RED = "\033[91m"
+#GREEN = "\033[92m"
+#YELLOW = "\033[93m"
+#RESET = "\033[0m"
+
+MISS = 0  # _-.: letter not found ⬜
+MISSPLACED = 1  # O, ?: letter in wrong place 🟨
+EXACT = 2  # X, +: right letter, right place 🟩
 
 
 print("You have 6 attempts to guess the correct 5-letter word")
@@ -27,50 +31,65 @@ print("Yellow marks correct letters, whereas green marks correct letters in the 
 # TODO: select target word at random from TARGET_WORDS
 target_word = random.choice(TARGET_WORDS)
 
-#Uncomment to pin target word
-#print(target_word)
+# Uncomment to pin target word
+print(target_word)
+
+# Enter the user's name
+
 
 def display_matching_characters(guess=(), target_word=()):
-    i = 0
-    result = ""
-    #Result has no value, required to print out empty string for guess
-    for char in guess:
-        if char == target_word[i]:
-            # Print the character in green
-            print(GREEN + char + RESET, end='')
-        elif char in target_word:
-            # Print the character in yellow if it's part of the correct word but not in the correct position
-            print(YELLOW + char + RESET, end='')
-        else:
-            # Print the character as it is (not green or yellow)
-            print(char, end='')
-        i += 1
-    return result
+    result = ['⬜'] * len(target_word)
+    # Empty boxes as per length of target_word
+    target_char_count = {}
+
+    # Green per correct letter placement
+    exact_matches = [False] * len(guess)
+    for i in range(len(target_word)):
+        if target_word[i] == guess[i]:
+            result[i] = '🟩'
+            exact_matches[i] = True
+
+     # Counts non-exact letters
+    for i in range(len(target_word)):
+        if not exact_matches[i]:
+            if target_word[i] in target_char_count:
+                target_char_count[target_word[i]] += 1
+            else:
+                target_char_count[target_word[i]] = 1
+
+    # Yellow per correct letter not placement
+    for i in range(len(guess)):
+        if not exact_matches[i] and guess[i] in target_char_count and target_char_count[guess[i]] > 0:
+            result[i] = '🟨'  # Misplaced match
+            target_char_count[guess[i]] -= 1
+
+
+
+    return ''.join(result)
 
 # TODO: repeat for MAX_TRIES valid attempts
 # (start loop)
 class WordleMechanics:
-    while True:
-        if ATTEMPTS_TRIED < MAX_TRIES:
-
-    # TODO: ensure guess in VALID_WORDS
-            guess = input("What is your guess?: ").strip().lower()
-            if guess in VALID_WORDS:
-                ATTEMPTS_TRIED += 1
-                if guess == target_word:
-                    print(GREEN + "Your guess is correct!" + RESET)
-                else:
-                    print(RED + "Your guess is wrong!" + RESET)
-                    # TODO: provide clues for each character in the guess using your scoring algorithm
-                    print(display_matching_characters(guess, target_word))
-                    print(f"You have used {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
+    while ATTEMPTS_TRIED < MAX_TRIES:
+        guess = input("What is your guess?: ").strip().lower()
+        if guess in VALID_WORDS:
+            ATTEMPTS_TRIED += 1
+            if guess == target_word:
+                print(f"{guess}")
+                print('🟩' * len(target_word))
+                print("Your guess is correct!")
+                break
             else:
-                print(RED + "Invalid word, please enter a 5 letter word" + RESET)
-
-    # (end loop)
+                print(f"{guess}")
+                # TODO: provide clues for each character in the guess using your scoring algorithm
+                print(display_matching_characters(guess, target_word))
+                print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
         else:
-            print("Game Over")
-            break
+            print("Invalid word, please enter a 5 letter word")
+    # (end loop)
+    else:
+        print("Game Over")
+
 
 
 # NOTES:
