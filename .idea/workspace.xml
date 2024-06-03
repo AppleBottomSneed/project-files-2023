@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="638dfacf-9a1f-402c-9671-617a5b8d4d90" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ICTPRG302 AT2 PRJ 2023.docx" beforeDir="false" afterPath="$PROJECT_DIR$/ICTPRG302 AT2 PRJ 2023.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_python_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_python_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$TPRG302 AT2 PRJ 2023.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <workItem from="1716791948835" duration="2437000" />
       <workItem from="1716863993078" duration="2676000" />
       <workItem from="1717046654349" duration="3765000" />
-      <workItem from="1717375029469" duration="10164000" />
+      <workItem from="1717375029469" duration="10756000" />
     </task>
     <servers />
   </component>
