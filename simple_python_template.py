@@ -4,7 +4,6 @@ Guess-My-Word Project Application"""
 # Begin by completing the TODO items below in the order you specified in the journal
 import random
 
-
 read_target_words_file = open('./word-bank/target_words.txt', 'r')
 read_all_words_file = open('./word-bank/all_words.txt', 'r')
 
@@ -35,6 +34,16 @@ target_word = random.choice(TARGET_WORDS)
 print(target_word)
 
 # Enter the user's name
+username = input("Enter your username: ").strip()
+
+# Recording user into log
+user_log = "user_log.txt"
+
+def user_details_log(username, guess, result, target_word=()):
+    log_instance = f"{username}: Target word:{target_word} \n Guess:{guess}, Score: {result}"
+    # Need utf-8 to fix unicode error
+    record_instance = open('user_log.txt', 'a', encoding="utf-8")
+    record_instance.write(log_instance)
 
 
 def display_matching_characters(guess=(), target_word=()):
@@ -51,6 +60,7 @@ def display_matching_characters(guess=(), target_word=()):
 
      # Counts non-exact letters
     for i in range(len(target_word)):
+        # If +1 then is correct
         if not exact_matches[i]:
             if target_word[i] in target_char_count:
                 target_char_count[target_word[i]] += 1
@@ -60,7 +70,7 @@ def display_matching_characters(guess=(), target_word=()):
     # Yellow per correct letter not placement
     for i in range(len(guess)):
         if not exact_matches[i] and guess[i] in target_char_count and target_char_count[guess[i]] > 0:
-            result[i] = '🟨'  # Misplaced match
+            result[i] = '🟨'
             target_char_count[guess[i]] -= 1
 
 
@@ -75,15 +85,19 @@ class WordleMechanics:
         if guess in VALID_WORDS:
             ATTEMPTS_TRIED += 1
             if guess == target_word:
+                result = '🟩' * len(guess)  # All correct
                 print(f"{guess}")
-                print('🟩' * len(target_word))
+                print(result)
                 print("Your guess is correct!")
+                user_details_log(username, guess, result, target_word)
                 break
             else:
+                result = display_matching_characters(guess, target_word)
                 print(f"{guess}")
-                # TODO: provide clues for each character in the guess using your scoring algorithm
-                print(display_matching_characters(guess, target_word))
+                print(result)
                 print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
+                user_details_log(username, guess, result, target_word)
+
         else:
             print("Invalid word, please enter a 5 letter word")
     # (end loop)
