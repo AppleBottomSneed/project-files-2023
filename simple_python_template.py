@@ -10,6 +10,11 @@ read_all_words_file = open('./word-bank/all_words.txt', 'r')
 TARGET_WORDS = read_target_words_file.read().split()
 VALID_WORDS = read_all_words_file.read().split()
 
+# TODO: select target word at random from TARGET_WORDS
+target_word = random.choice(TARGET_WORDS)
+MAX_TRIES = 6
+ATTEMPTS_TRIED = 0
+
 #Colour shortcuts
 #RED = "\033[91m"
 #GREEN = "\033[92m"
@@ -23,6 +28,17 @@ EXACT = 2  # X, +: right letter, right place 🟩
 
 print("You have 6 attempts to guess the correct 5-letter word")
 print("Yellow marks correct letters, whereas green marks correct letters in the correct placement")
+
+# Uncomment to pin target word
+print(target_word)
+
+# Enter the user's name
+username = input("Enter your username: ").strip()
+# Recording user into log
+user_log = "user_log.txt"
+
+
+
 
 def user_details_log(username, target_word):
     log_header = f"\nUsername: {username} \nTarget word: {target_word} \n"
@@ -64,29 +80,14 @@ def display_matching_characters(guess=(), target_word=()):
 
     return ''.join(result)
 
-# TODO: repeat for MAX_TRIES valid attempts
+
+# user_details_log prints out log_header once
+user_details_log(username, target_word)
 
 
-def wordle_mechanics():
-    # Enter the user's name
-    username = input("Enter your username: ").strip()
-    # Recording user into log
-    user_log = "user_log.txt"
 
-    play_again = True
+class WordleMechanics:
 
-
-    while play_again:
-        # TODO: select target word at random from TARGET_WORDS
-        target_word = random.choice(TARGET_WORDS)
-        MAX_TRIES = 6
-        ATTEMPTS_TRIED = 0
-
-
-    # user_details_log prints out log_header once
-    user_details_log(username, target_word, user_log)
-    # Uncomment to pin target word
-    print(target_word)
 
     while ATTEMPTS_TRIED < MAX_TRIES:
         guess = input("What is your guess?: ").strip().lower()
@@ -113,11 +114,11 @@ def wordle_mechanics():
     # (end loop)
     else:
         print("Game Over")
+    # TODO: repeat for MAX_TRIES valid attempts
     # Ask user to play again
     play_again_input = input("Would you like to play again?(Y/N): ").lower()
     play_again = (play_again_input == 'y')
 
-wordle_mechanics()
 
 
 
