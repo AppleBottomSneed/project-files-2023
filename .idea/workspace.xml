@@ -128,7 +128,7 @@
       <workItem from="1717046654349" duration="3765000" />
       <workItem from="1717375029469" duration="11948000" />
       <workItem from="1717474096460" duration="16449000" />
-      <workItem from="1717562546665" duration="7877000" />
+      <workItem from="1717562546665" duration="10602000" />
     </task>
     <servers />
   </component>
@@ -148,6 +148,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_files_2023$.coverage" NAME=" Coverage Results" MODIFIED="1716787601875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project_files_2023$simple_python_template.coverage" NAME="simple_python_template Coverage Results" MODIFIED="1717569495138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_files_2023$simple_python_template.coverage" NAME="simple_python_template Coverage Results" MODIFIED="1717573069654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -60,3 +60,17 @@ Guess: hello  Score: ⬜🟨⬜⬜⬜
 Username: hello 
 Target word: copse 
 Guess: copse  Score: 🟩🟩🟩🟩🟩
+jon: Target word: apple
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+Guess: hello, Score: ⬜🟨⬜🟩⬜
+jon: Target word: clock
+Guess: hello, Score: ⬜⬜🟨⬜🟨
+Guess: hello, Score: ⬜⬜🟨⬜🟨
+Guess: hello, Score: ⬜⬜🟨⬜🟨
+Guess: hello, Score: ⬜⬜🟨⬜🟨
+Guess: hello, Score: ⬜⬜🟨⬜🟨
+Guess: hello, Score: ⬜⬜🟨⬜🟨
