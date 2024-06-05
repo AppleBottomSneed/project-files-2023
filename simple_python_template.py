@@ -39,12 +39,16 @@ username = input("Enter your username: ").strip()
 # Recording user into log
 user_log = "user_log.txt"
 
-def user_details_log(username, guess, result, target_word=()):
-    log_instance = f"{username}: Target word:{target_word} \n Guess:{guess}, Score: {result}"
+def user_details_log(username, target_word):
+    log_header = f"\nUsername: {username} \nTarget word: {target_word} \n"
     # Need utf-8 to fix unicode error
-    record_instance = open('user_log.txt', 'a', encoding="utf-8")
-    record_instance.write(log_instance)
+    record_header = open('user_log.txt', 'a', encoding="utf-8")
+    record_header.write(log_header)
 
+def user_guess(guess, result):
+    log_instance = f"Guess: {guess}  Score: {result}\n"
+    record_guess = open('user_log.txt', 'a', encoding="utf-8")
+    record_guess.write(log_instance)
 
 def display_matching_characters(guess=(), target_word=()):
     result = ['⬜'] * len(target_word)
@@ -73,12 +77,12 @@ def display_matching_characters(guess=(), target_word=()):
             result[i] = '🟨'
             target_char_count[guess[i]] -= 1
 
-
-
     return ''.join(result)
 
 # TODO: repeat for MAX_TRIES valid attempts
-# (start loop)
+# user_details_log prints out log_header once
+user_details_log(username, target_word)
+
 class WordleMechanics:
     while ATTEMPTS_TRIED < MAX_TRIES:
         guess = input("What is your guess?: ").strip().lower()
@@ -89,14 +93,16 @@ class WordleMechanics:
                 print(f"{guess}")
                 print(result)
                 print("Your guess is correct!")
-                user_details_log(username, guess, result, target_word)
+                user_guess(guess, result)
+                print("Would you like to play again?")
                 break
+
             else:
                 result = display_matching_characters(guess, target_word)
                 print(f"{guess}")
                 print(result)
                 print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
-                user_details_log(username, guess, result, target_word)
+                user_guess(guess, result)
 
         else:
             print("Invalid word, please enter a 5 letter word")

@@ -1,5 +1,62 @@
-hell: Target word:chock 
- Guesses:clock, Score: 🟩⬜🟩🟩🟩hell: Target word:chock 
- Guesses:clock, Score: 🟩⬜🟩🟩🟩hell: Target word:chock 
- Guesses:hello, Score: 🟨⬜⬜⬜🟨hell: Target word:chock 
- Guesses:chock, Score: 🟩🟩🟩🟩🟩
+jonny: Target word:opine 
+ Guess: hello  Score: ⬜🟨⬜⬜🟨
+Guess: hello  Score: ⬜🟨⬜⬜🟨
+Guess: opine  Score: 🟩🟩🟩🟩🟩
+Username:john 
+ Target word:slimyGuess: hello  Score: ⬜⬜🟨⬜⬜
+Guess: slimy  Score: 🟩🟩🟩🟩🟩
+Username: jonny 
+ Target word: cagey 
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: cagey  Score: 🟩🟩🟩🟩🟩
+Username: hello 
+Target word: parka 
+Guess: parka  Score: 🟩🟩🟩🟩🟩
+Username: James 
+Target word: frost 
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: cocky  Score: ⬜🟨⬜⬜⬜
+Guess: house  Score: ⬜🟨⬜🟩⬜
+Guess: frost  Score: 🟩🟩🟩🟩🟩
+Username: BIlly 
+Target word: limbo 
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+Guess: hello  Score: ⬜⬜🟨⬜🟩
+
+Username: peep 
+Target word: court 
+Guess: court  Score: 🟩🟩🟩🟩🟩
+
+Username: Jonny 
+Target word: zebra 
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: sunny  Score: ⬜⬜⬜⬜⬜
+Guess: runny  Score: 🟨⬜⬜⬜⬜
+Guess: honey  Score: ⬜⬜⬜🟨⬜
+
+Username: hello 
+Target word: input 
+Guess: input  Score: 🟩🟩🟩🟩🟩
+
+Username: hel 
+Target word: ozone 
+Guess: ozone  Score: 🟩🟩🟩🟩🟩
+
+Username: dwa 
+Target word: barge 
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+
+Username: hello 
+Target word: copse 
+Guess: copse  Score: 🟩🟩🟩🟩🟩
