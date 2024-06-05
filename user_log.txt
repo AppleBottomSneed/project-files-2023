@@ -1,0 +1,45 @@
+
+Username: jon 
+Target word: reuse 
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: reuse  Score: 🟩🟩🟩🟩🟩
+
+Username: jonny 
+Target word: geeky 
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: geeky  Score: 🟩🟩🟩🟩🟩
+jon: Target word: tones
+jon: Target word: woody
+Guess: hello, Score: ⬜⬜⬜⬜🟨
+Guess: purse, Score: ⬜⬜⬜⬜⬜
+Guess: purse, Score: ⬜⬜⬜⬜⬜
+
+Username: he 
+Target word: timid 
+Guess: timid  Score: 🟩🟩🟩🟩🟩
+
+Username: hj 
+Target word: strip 
+
+Username: hel 
+Target word: badge 
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: badge  Score: 🟩🟩🟩🟩🟩
+
+Username: si 
+Target word: twits 
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: monty  Score: ⬜⬜⬜🟩⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+
+Username: si 
+Target word: cobra 
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨

@@ -10,10 +10,8 @@ read_all_words_file = open('./word-bank/all_words.txt', 'r')
 TARGET_WORDS = read_target_words_file.read().split()
 VALID_WORDS = read_all_words_file.read().split()
 
-# TODO: select target word at random from TARGET_WORDS
-target_word = random.choice(TARGET_WORDS)
-MAX_TRIES = 6
-ATTEMPTS_TRIED = 0
+
+
 
 #Colour shortcuts
 #RED = "\033[91m"
@@ -29,11 +27,9 @@ EXACT = 2  # X, +: right letter, right place 🟩
 print("You have 6 attempts to guess the correct 5-letter word")
 print("Yellow marks correct letters, whereas green marks correct letters in the correct placement")
 
-# Uncomment to pin target word
-print(target_word)
 
-# Enter the user's name
-username = input("Enter your username: ").strip()
+
+
 # Recording user into log
 user_log = "user_log.txt"
 
@@ -81,43 +77,53 @@ def display_matching_characters(guess=(), target_word=()):
     return ''.join(result)
 
 
-# user_details_log prints out log_header once
-user_details_log(username, target_word)
 
 
 
-class WordleMechanics:
+def wordle_mechanics():
+    # Enter the user's name
+    username = input("Enter your username: ").strip()
+    play_again = True
 
+    while play_again:
+        # TODO: select target word at random from TARGET_WORDS
+        target_word = random.choice(TARGET_WORDS)
+        MAX_TRIES = 6
+        ATTEMPTS_TRIED = 0
 
-    while ATTEMPTS_TRIED < MAX_TRIES:
-        guess = input("What is your guess?: ").strip().lower()
-        if guess in VALID_WORDS:
-            ATTEMPTS_TRIED += 1
-            if guess == target_word:
-                result = '🟩' * len(guess)  # All correct
-                print(f"{guess}")
-                print(result)
-                print("Your guess is correct!")
-                user_guess(guess, result)
-                print("Would you like to play again?")
-                break
+        # user_details_log prints out log_header once
+        user_details_log(username, target_word)
+
+        while ATTEMPTS_TRIED < MAX_TRIES:
+            guess = input("What is your guess?: ").strip().lower()
+            if guess in VALID_WORDS:
+                ATTEMPTS_TRIED += 1
+                if guess == target_word:
+                    result = '🟩' * len(guess)
+                    print(f"{guess}")
+                    print(result)
+                    print("Your guess is correct!")
+                    user_guess(guess, result)
+                    print("Would you like to play again?")
+                    break
+
+                else:
+                    result = display_matching_characters(guess, target_word)
+                    print(f"{guess}")
+                    print(result)
+                    print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
+                    user_guess(guess, result)
 
             else:
-                result = display_matching_characters(guess, target_word)
-                print(f"{guess}")
-                print(result)
-                print(f"You have {ATTEMPTS_TRIED} out of {MAX_TRIES} attempts")
-                user_guess(guess, result)
-
+                print("Invalid word, please enter a 5 letter word")
+        # (end loop)
         else:
-            print("Invalid word, please enter a 5 letter word")
-    # (end loop)
-    else:
-        print("Game Over")
+            print("Game Over")
     # TODO: repeat for MAX_TRIES valid attempts
     # Ask user to play again
-    play_again_input = input("Would you like to play again?(Y/N): ").lower()
-    play_again = (play_again_input == 'y')
+        play_again_input = input("Would you like to play again?(Y/N): ").lower()
+        play_again = (play_again_input == 'y')
+wordle_mechanics()
 
 
 
