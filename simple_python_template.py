@@ -10,9 +10,6 @@ read_all_words_file = open('./word-bank/all_words.txt', 'r')
 TARGET_WORDS = read_target_words_file.read().split()
 VALID_WORDS = read_all_words_file.read().split()
 
-
-
-
 #Colour shortcuts
 #RED = "\033[91m"
 #GREEN = "\033[92m"
@@ -23,12 +20,9 @@ MISS = 0  # _-.: letter not found ⬜
 MISSPLACED = 1  # O, ?: letter in wrong place 🟨
 EXACT = 2  # X, +: right letter, right place 🟩
 
-
+# Intro text
 print("You have 6 attempts to guess the correct 5-letter word")
 print("Yellow marks correct letters, whereas green marks correct letters in the correct placement")
-
-
-
 
 # Recording user into log
 user_log = "user_log.txt"
@@ -47,6 +41,7 @@ def user_guess(guess, result):
     record_guess = open('user_log.txt', 'a', encoding="utf-8")
     record_guess.write(log_instance)
 
+# TODO: ensure guess in VALID_WORDS
 def display_matching_characters(guess=(), target_word=()):
     result = ['⬜'] * len(target_word)
     # Empty boxes as per length of target_word
@@ -59,9 +54,8 @@ def display_matching_characters(guess=(), target_word=()):
             result[i] = '🟩'
             exact_matches[i] = True
 
-     # Counts non-exact letters
+     # Counts non-exact letters to prevent duplicates
     for i in range(len(target_word)):
-        # If +1 then is correct
         if not exact_matches[i]:
             if target_word[i] in target_char_count:
                 target_char_count[target_word[i]] += 1
@@ -91,13 +85,18 @@ def wordle_mechanics():
         MAX_TRIES = 6
         ATTEMPTS_TRIED = 0
 
+        # Uncomment to reveal answer
+        # print(target_word)
+
         # user_details_log prints out log_header once
         user_details_log(username, target_word)
 
+        # TODO: repeat for MAX_TRIES valid attempts
         while ATTEMPTS_TRIED < MAX_TRIES:
             guess = input("What is your guess?: ").strip().lower()
             if guess in VALID_WORDS:
                 ATTEMPTS_TRIED += 1
+                # TODO: provide clues for each character in the guess using your scoring algorithm
                 if guess == target_word:
                     result = '🟩' * len(guess)
                     print(f"{guess}")
@@ -119,10 +118,11 @@ def wordle_mechanics():
         # (end loop)
         else:
             print("Game Over")
-    # TODO: repeat for MAX_TRIES valid attempts
+
     # Ask user to play again
         play_again_input = input("Would you like to play again?(Y/N): ").lower()
         play_again = (play_again_input == 'y')
+# Call method again if play_again == 'y'
 wordle_mechanics()
 
 
