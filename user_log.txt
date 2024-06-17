@@ -82,3 +82,21 @@ Guess: hello  Score: ⬜⬜⬜🟩🟨
 Username: hel 
 Target word: world 
 Guess: hello  Score: ⬜⬜⬜🟩⬜
+
+Username: testname 
+Target word: opium 
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: cuppa  Score: ⬜🟨🟨⬜⬜
+Guess: moots  Score: 🟨🟨⬜⬜⬜
+Guess: tinge  Score: ⬜🟨⬜⬜⬜
+Guess: porky  Score: 🟨🟨⬜⬜⬜
+Guess: willy  Score: ⬜🟨⬜⬜⬜
+
+Username: testname 
+Target word: cabal 
+Guess: cuppa  Score: 🟩⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜🟨⬜⬜
+Guess: stork  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜🟨⬜⬜
+Guess: hello  Score: ⬜⬜🟨⬜⬜
+Guess: hello  Score: ⬜⬜🟨⬜⬜
