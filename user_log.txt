@@ -1,0 +1,84 @@
+
+Username: jon 
+Target word: reuse 
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: reuse  Score: 🟩🟩🟩🟩🟩
+
+Username: jonny 
+Target word: geeky 
+Guess: hello  Score: ⬜🟩⬜⬜⬜
+Guess: geeky  Score: 🟩🟩🟩🟩🟩
+jon: Target word: tones
+jon: Target word: woody
+Guess: hello, Score: ⬜⬜⬜⬜🟨
+Guess: purse, Score: ⬜⬜⬜⬜⬜
+Guess: purse, Score: ⬜⬜⬜⬜⬜
+
+Username: he 
+Target word: timid 
+Guess: timid  Score: 🟩🟩🟩🟩🟩
+
+Username: hj 
+Target word: strip 
+
+Username: hel 
+Target word: badge 
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: badge  Score: 🟩🟩🟩🟩🟩
+
+Username: si 
+Target word: twits 
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: monty  Score: ⬜⬜⬜🟩⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+
+Username: si 
+Target word: cobra 
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+
+Username: jonny 
+Target word: egret 
+Guess: hello  Score: ⬜🟨⬜⬜⬜
+Guess: cream  Score: ⬜🟨🟨⬜⬜
+Guess: creme  Score: ⬜🟨🟨⬜🟨
+Guess: light  Score: ⬜⬜🟨⬜🟩
+Guess: crate  Score: ⬜🟨⬜🟨🟨
+Guess: fight  Score: ⬜⬜🟨⬜🟩
+
+Username: jonny 
+Target word: broom 
+Guess: might  Score: 🟨⬜⬜⬜⬜
+Guess: sight  Score: ⬜⬜⬜⬜⬜
+Guess: fight  Score: ⬜⬜⬜⬜⬜
+Guess: light  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜🟨
+Guess: hight  Score: ⬜⬜⬜⬜⬜
+
+Username: jon 
+Target word: pinky 
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: cocky  Score: ⬜⬜⬜🟩🟩
+Guess: heist  Score: ⬜⬜🟨⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: ⬜⬜⬜⬜⬜
+
+Username: hel 
+Target word: rarer 
+Guess: roast  Score: 🟩⬜🟨⬜⬜
+
+Username: jon 
+Target word: world 
+Guess: hello  Score: ⬜⬜⬜🟩🟨
+
+Username: hel 
+Target word: world 
+Guess: hello  Score: ⬜⬜⬜🟩⬜
