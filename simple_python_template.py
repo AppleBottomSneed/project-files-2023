@@ -86,7 +86,7 @@ def wordle_mechanics():
         ATTEMPTS_TRIED = 0
 
         # Uncomment to reveal answer
-        # print(target_word)
+        print(target_word)
 
         # user_details_log prints out log_header once
         user_details_log(username, target_word)

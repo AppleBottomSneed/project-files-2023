@@ -100,3 +100,24 @@ Guess: stork  Score: ⬜⬜⬜⬜⬜
 Guess: hello  Score: ⬜⬜🟨⬜⬜
 Guess: hello  Score: ⬜⬜🟨⬜⬜
 Guess: hello  Score: ⬜⬜🟨⬜⬜
+
+Username: Toby 
+Target word: hound 
+Guess: stick  Score: ⬜⬜⬜⬜⬜
+Guess: honey  Score: 🟩🟩🟨⬜⬜
+Guess: apple  Score: ⬜⬜⬜⬜⬜
+Guess: hello  Score: 🟩⬜⬜⬜🟨
+Guess: world  Score: ⬜🟩⬜⬜🟩
+Guess: peach  Score: ⬜⬜⬜⬜🟨
+
+Username: Jonny 
+Target word: lynch 
+
+Username: Jonny 
+Target word: helix 
+Guess: aahed  Score: ⬜⬜🟨🟨⬜
+Guess: helix  Score: 🟩🟩🟩🟩🟩
+
+Username: Jonny 
+Target word: nosey 
+Guess: nosey  Score: 🟩🟩🟩🟩🟩
